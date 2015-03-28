@@ -33,4 +33,11 @@ describe 'calc' do
       it { is_expected.to eq 1 }
     end
   end
+
+  describe 'mul' do
+    it { expect(mul(1, 0)).to eq 0 }
+    it { expect(mul(0, 1)).to eq 0 }
+    it { expect(mul(1, 1)).to eq 1 }
+    it { expect(mul(2, 3)).to eq 6 }
+  end
 end

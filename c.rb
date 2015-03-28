@@ -5,3 +5,7 @@ end
 def sub(x, y)
   x - y
 end
+
+def mul(x, y)
+  x * y
+end

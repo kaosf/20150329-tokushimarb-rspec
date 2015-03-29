@@ -15,5 +15,12 @@ def div(x, y)
 end
 
 def sqrt(x)
-  Math.sqrt(x)
+  e = 1.0
+  a = x
+  while e.abs > 0.000001
+    x1 = x - (x ** 2 - a) / (2.0 * x)
+    e = x1 - x
+    x = x1
+  end
+  x
 end

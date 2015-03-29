@@ -48,5 +48,6 @@ describe 'calc' do
 
   describe 'sqrt' do
     it { expect((sqrt(2) * sqrt(2) - 2).abs).to(be < 0.001) }
+    it { expect((sqrt(3) * sqrt(3) - 3).abs).to(be < 0.001) }
   end
 end

@@ -45,4 +45,8 @@ describe 'calc' do
     it { expect(div(1, 1)).to(eq(1)) }
     it { expect(div(2, 1)).to(eq(2)) }
   end
+
+  describe 'sqrt' do
+    it { expect((sqrt(2) * sqrt(2) - 2).abs).to(be < 0.001) }
+  end
 end

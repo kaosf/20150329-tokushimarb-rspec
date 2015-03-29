@@ -13,3 +13,7 @@ end
 def div(x, y)
   x / y
 end
+
+def sqrt(x)
+  Math.sqrt(x)
+end

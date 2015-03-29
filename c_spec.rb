@@ -40,4 +40,9 @@ describe 'calc' do
     it { expect(mul(1, 1)).to eq 1 }
     it { expect(mul(2, 3)).to eq 6 }
   end
+
+  describe 'div' do
+    it { expect(div(1, 1)).to(eq(1)) }
+    it { expect(div(2, 1)).to(eq(2)) }
+  end
 end
